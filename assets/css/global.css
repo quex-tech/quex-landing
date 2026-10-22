@@ -1,0 +1,136 @@
+html {
+    scroll-behavior: auto; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */ 
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+:root {
+/* цвета */
+	--dark-gray: #373532;
+	--gold-grey: #546d6b;
+	--warm-gray: #b2a9a4;
+	--light-grey: #efefef;
+	--green: #cf0;
+/* шрифты */
+    --font-family: "Inter", sans-serif;
+    --second-family: "TT Firs Neue Var", sans-serif;
+/* контейнеры */
+    --xsWidth: 414px;
+    --smWidth: 768px;
+    --mdWidth: 1024px;
+    --lgWidth: 1280px;
+    --xlWidth: 1360px;
+    --xxlWidth: 95.21vw;
+}
+/* основная сетка */
+.container,
+.widget-area {
+    max-width: var(--xxlWidth);
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 0 46px; */
+}
+/* flexbox css */
+.d-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.--just-space {
+    justify-content: space-between;
+}
+
+.--just-center {
+    justify-content: center;
+}
+
+.--just-end {
+    justify-content: flex-end;
+}
+
+.--align-str {
+    align-items: stretch;
+}
+
+.--align-center {
+    align-items: center;
+}
+
+.--align-end {
+    align-items: flex-end;
+}
+
+.--dir-col {
+    flex-direction: column;
+}
+/* основные стили */
+html {
+    font-size: 0.83vw;
+}
+
+html,
+body {
+    min-height: 100%;
+    position: relative;
+}
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    font-size: 0.83vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #EFEFEF;
+}
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: "TT Firs Neue", sans-serif;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    margin-left: 0px;
+    list-style: none;
+}
+input[type="text"],
+input[type="reset"],
+input[type="submit"],
+button,
+select,
+textarea {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input {outline:none;}
+button {
+    border: 0;
+    border-radius: 0;
+}
+.desktop {
+    display: block;
+}
+.mobile {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
