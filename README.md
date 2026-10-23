@@ -8,4 +8,4 @@ Static landing page for [quex.tech](https://quex.tech). Plain HTML, CSS and JS, 
 
 Preview locally: `python3 -m http.server` and open http://localhost:8000.
 
-Deploy: GitHub Pages from the `main` branch root. To serve on quex.tech, add a `CNAME` file containing `quex.tech` and point DNS at GitHub Pages.
+Deploy: GitHub Pages from the `main` branch root, custom domain `quex.tech` via `CNAME`.
